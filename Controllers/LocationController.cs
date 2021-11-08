@@ -26,8 +26,7 @@ namespace task2.Controllers
             List<Data> dataSet = new List<Data>();
             //Access Key
             const string accessKey = "169fb872fb726ed30d8a98e50614b312";
-          
-            //Have your api call in try/catch block.
+
             try
             {
                 //Now we will have our using directives which would have a HttpClient
@@ -47,7 +46,6 @@ namespace task2.Controllers
                     var ip = $"{dataObj["ip"]}";
                     var city = $"{dataObj["city"]}";
                     dataSet.Add(new Data(ip, city));
-                    return dataSet;
                 }
                 else
                 {

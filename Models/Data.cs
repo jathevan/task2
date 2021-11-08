@@ -2,13 +2,13 @@
 {
     public class Data
     {
-        public string ip { get; set; }
-        public string city { get; set; }
+        public string IP { get; set; }
+        public string City { get; set; }
 
         public Data(string ip, string city)
         {
-            this.ip = ip;
-            this.city = city;
+            this.IP = ip;
+            this.City = city;
         }
     }
 }
